@@ -53,6 +53,10 @@ const defaultData = {
   proj4_label: 'Web Development Projects',
   proj4_title: 'Digital health experiences',
   proj4_desc: 'Building clean, responsive web interfaces for modern healthcare brands and clinical workflows.',
+  proj1_image: null,
+  proj2_image: null,
+  proj3_image: null,
+  proj4_image: null,
   visionText: '"I envision a future where technology deepens care, AI empowers empathy, and stories connect patients to possibility."',
   contactTitle: 'Let\'s build meaningful healthcare experiences together.',
   contactNote: 'Ready to collaborate on healthcare innovation, AI storytelling, or digital care strategy.',
@@ -72,6 +76,13 @@ function loadPortfolio() {
   if (portfolio.profilePhoto) {
     displayProfilePhoto(portfolio.profilePhoto);
   }
+  // Load project images
+  for (let i = 1; i <= 4; i++) {
+    const imageKey = `proj${i}_image`;
+    if (portfolio[imageKey]) {
+      displayProjectImage(i, portfolio[imageKey]);
+    }
+  }
 }
 
 // Save portfolio
@@ -82,6 +93,14 @@ function savePortfolio() {
 // Display profile photo
 function displayProfilePhoto(src) {
   profilePhoto.innerHTML = `<img src="${src}" alt="Profile photo" />`;
+}
+
+// Display project image
+function displayProjectImage(projectNumber, src) {
+  const imageDiv = document.getElementById(`imgZone_proj${projectNumber}`);
+  if (imageDiv) {
+    imageDiv.innerHTML = `<img src="${src}" alt="Project ${projectNumber} image" />`;
+  }
 }
 
 // Edit trigger
