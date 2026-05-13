@@ -1,0 +1,11 @@
+[build]
+  publish = "."
+  command = ""
+
+[[redirects]]
+  from = "/*"
+  to = "/portfolio.html"
+  status = 200
+
+[context.production]
+  environment = { NETLIFY_EDGE_MIDDLEWARE = "v1" }
