@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rachael · Nurse, AI Creator, Healthcare Innovator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="portfolio-edit.css" />
+</head>
+<body>
+  <div class="page-layer"></div>
+
+  <nav class="nav">
+    <a class="brand" href="#home">Rachael<span>· Nurse AI Creator</span></a>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#vision">Vision</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="edit-mode-indicator" id="editIndicator"></div>
+  </nav>
+
+  <main>
+    <section id="home" class="hero section-fullscreen">
+      <div class="hero-grid"></div>
+      <div class="hero-copy reveal reveal-delay-1">
+        <p class="eyebrow editable" data-key="eyebrow">Nurse · AI Creator · Healthcare Tech Innovator · Digital Storyteller</p>
+        <h1 class="editable" data-key="heroTitle">Building the Future of Healthcare with AI & Creativity</h1>
+        <p class="hero-text editable" data-key="heroText">I blend clinical insight, digital design, and machine intelligence to transform care, craft stories, and launch human-centered health experiences.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View My Work</a>
+          <a class="btn btn-outline" href="#contact">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-profile reveal reveal-delay-2">
+        <div class="profile-frame" id="profileFrame">
+          <div class="profile-glow"></div>
+          <div class="profile-photo" id="profilePhoto">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <circle cx="60" cy="60" r="58" fill="rgba(0, 212, 255, 0.08)" />
+              <path d="M60 26a24 24 0 1 1 0 48 24 24 0 0 1 0-48Zm0 66c-22 0-40 10-40 22v6h80v-6c0-12-18-22-40-22Z" fill="rgba(255,255,255,0.08)" stroke="rgba(0,212,255,0.4)" stroke-width="2" />
+            </svg>
+          </div>
+        </div>
+        <div class="profile-actions">
+          <label for="photoInput" class="btn btn-secondary btn-full" id="photoLabel">Add Photo</label>
+          <input type="file" id="photoInput" accept="image/*" hidden />
+          <p class="photo-hint" id="photoHint">Upload your own portrait to personalize the page instantly.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section section-glass reveal">
+      <div class="section-header">
+        <span class="eyebrow">About</span>
+        <h2 class="editable" data-key="aboutTitle">Rooted in care, inspired by intelligent design.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p class="editable" data-key="aboutPara1">As a nurse and healthcare innovator, I bring clinical empathy to the heart of every digital experience. My work sits at the intersection of patient-centered care, creative storytelling, and emerging AI tools that make health systems more intuitive, humane, and powerful.</p>
+          <p class="editable" data-key="aboutPara2">I develop ideas, prototypes, and narratives that help care teams connect with their communities, visualize health journeys, and build trust through technology.</p>
+        </div>
+        <div class="about-details">
+          <div class="bio-card">
+            <h3 class="editable" data-key="bioTitle">My journey</h3>
+            <p class="editable" data-key="bioText">From bedside practice to building AI-powered healthcare tools, I translate clinical intuition into digital innovation. My creative process is driven by compassion, clarity, and a belief that technology should amplify human connection.</p>
+          </div>
+          <div class="theme-chips" id="themeChips">
+            <span class="chip editable" data-key="chip1">Compassion</span>
+            <span class="chip editable" data-key="chip2">Innovation</span>
+            <span class="chip editable" data-key="chip3">Creativity</span>
+            <span class="chip editable" data-key="chip4">Technology</span>
+            <span class="chip editable" data-key="chip5">Human-Centered</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section reveal reveal-delay-1">
+      <div class="section-header">
+        <span class="eyebrow">Skills</span>
+        <h2 class="editable" data-key="skillsTitle">Capabilities that shape modern care.</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-column">
+          <h3 class="editable" data-key="skillsCol1Title">Healthcare Skills</h3>
+          <ul id="skillsCol1">
+            <li class="editable" data-key="skill1">Patient assessment & advocacy</li>
+            <li class="editable" data-key="skill2">Clinical workflow design</li>
+            <li class="editable" data-key="skill3">Care coordination</li>
+            <li class="editable" data-key="skill4">Health equity insights</li>
+          </ul>
+        </div>
+        <div class="skill-column">
+          <h3 class="editable" data-key="skillsCol2Title">Technology Skills</h3>
+          <ul id="skillsCol2">
+            <li class="editable" data-key="skill5">AI concept framing</li>
+            <li class="editable" data-key="skill6">Health tech prototyping</li>
+            <li class="editable" data-key="skill7">Data-informed storytelling</li>
+            <li class="editable" data-key="skill8">UX for clinical systems</li>
+          </ul>
+        </div>
+        <div class="skill-column">
+          <h3 class="editable" data-key="skillsCol3Title">Creative Skills</h3>
+          <ul id="skillsCol3">
+            <li class="editable" data-key="skill9">Visual narrative development</li>
+            <li class="editable" data-key="skill10">Brand voice crafting</li>
+            <li class="editable" data-key="skill11">Content strategy</li>
+            <li class="editable" data-key="skill12">Immersive digital storytelling</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal reveal-delay-2">
+      <div class="section-header">
+        <span class="eyebrow">Projects</span>
+        <h2 class="editable" data-key="projectsTitle">Work that bridges health, AI, and story.</h2>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+        <article class="project-card" data-project-id="proj1">
+          <div class="project-image-zone" id="imgZone_proj1">
+            <svg viewBox="0 0 200 150" aria-hidden="true">
+              <rect width="200" height="150" fill="rgba(0,212,255,0.06)" />
+              <path d="M80 50 L120 90 L100 120 M40 100 Q60 60 90 80" stroke="rgba(0,212,255,0.3)" stroke-width="2" fill="none" />
+            </svg>
+          </div>
+          <p class="project-label editable" data-key="proj1_label">Healthcare Technology Ideas</p>
+          <h3 class="editable" data-key="proj1_title">Smart care pathways</h3>
+          <p class="editable" data-key="proj1_desc">Designing AI-assisted tools that support clinicians, personalize patient journeys, and reduce friction across care teams.</p>
+          <div class="project-actions hidden" id="actions_proj1">
+            <label class="btn btn-sm btn-secondary">Upload Image<input type="file" class="project-image-input" accept="image/*" hidden data-project-id="proj1" /></label>
+            <button class="btn btn-sm btn-danger delete-project" data-project-id="proj1">Delete</button>
+          </div>
+        </article>
+
+        <article class="project-card" data-project-id="proj2">
+          <div class="project-image-zone" id="imgZone_proj2">
+            <svg viewBox="0 0 200 150" aria-hidden="true">
+              <rect width="200" height="150" fill="rgba(0,212,255,0.06)" />
+              <path d="M80 50 L120 90 L100 120 M40 100 Q60 60 90 80" stroke="rgba(0,212,255,0.3)" stroke-width="2" fill="none" />
+            </svg>
+          </div>
+          <p class="project-label editable" data-key="proj2_label">AI Visual & Creative Projects</p>
+          <h3 class="editable" data-key="proj2_title">Immersive health narratives</h3>
+          <p class="editable" data-key="proj2_desc">Creating visual stories and generative concepts that make complex healthcare ideas feel cinematic and accessible.</p>
+          <div class="project-actions hidden" id="actions_proj2">
+            <label class="btn btn-sm btn-secondary">Upload Image<input type="file" class="project-image-input" accept="image/*" hidden data-project-id="proj2" /></label>
+            <button class="btn btn-sm btn-danger delete-project" data-project-id="proj2">Delete</button>
+          </div>
+        </article>
+
+        <article class="project-card" data-project-id="proj3">
+          <div class="project-image-zone" id="imgZone_proj3">
+            <svg viewBox="0 0 200 150" aria-hidden="true">
+              <rect width="200" height="150" fill="rgba(0,212,255,0.06)" />
+              <path d="M80 50 L120 90 L100 120 M40 100 Q60 60 90 80" stroke="rgba(0,212,255,0.3)" stroke-width="2" fill="none" />
+            </svg>
+          </div>
+          <p class="project-label editable" data-key="proj3_label">Healthcare Storytelling</p>
+          <h3 class="editable" data-key="proj3_title">Human-centered narratives</h3>
+          <p class="editable" data-key="proj3_desc">Crafting story arcs that center patient experience, clinician insights, and the emotional impact of care innovation.</p>
+          <div class="project-actions hidden" id="actions_proj3">
+            <label class="btn btn-sm btn-secondary">Upload Image<input type="file" class="project-image-input" accept="image/*" hidden data-project-id="proj3" /></label>
+            <button class="btn btn-sm btn-danger delete-project" data-project-id="proj3">Delete</button>
+          </div>
+        </article>
+
+        <article class="project-card" data-project-id="proj4">
+          <div class="project-image-zone" id="imgZone_proj4">
+            <svg viewBox="0 0 200 150" aria-hidden="true">
+              <rect width="200" height="150" fill="rgba(0,212,255,0.06)" />
+              <path d="M80 50 L120 90 L100 120 M40 100 Q60 60 90 80" stroke="rgba(0,212,255,0.3)" stroke-width="2" fill="none" />
+            </svg>
+          </div>
+          <p class="project-label editable" data-key="proj4_label">Web Development Projects</p>
+          <h3 class="editable" data-key="proj4_title">Digital health experiences</h3>
+          <p class="editable" data-key="proj4_desc">Building clean, responsive web interfaces for modern healthcare brands and clinical workflows.</p>
+          <div class="project-actions hidden" id="actions_proj4">
+            <label class="btn btn-sm btn-secondary">Upload Image<input type="file" class="project-image-input" accept="image/*" hidden data-project-id="proj4" /></label>
+            <button class="btn btn-sm btn-danger delete-project" data-project-id="proj4">Delete</button>
+          </div>
+        </article>
+      </div>
+      <button class="btn btn-secondary" id="addProjectBtn" style="display:none; margin-top: 2rem;">+ Add Project</button>
+    </section>
+
+    <section id="vision" class="section vision-section reveal">
+      <div class="vision-card">
+        <p class="editable" data-key="visionText">"I envision a future where technology deepens care, AI empowers empathy, and stories connect patients to possibility."</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section reveal reveal-delay-1">
+      <div class="section-header">
+        <span class="eyebrow">Contact</span>
+        <h2 class="editable" data-key="contactTitle">Let's build meaningful healthcare experiences together.</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-side">
+          <p>Connect with me on:</p>
+          <div class="social-links">
+            <a href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="mailto:hello@example.com">Email</a>
+          </div>
+          <div class="contact-note">
+            <p class="editable" data-key="contactNote">Ready to collaborate on healthcare innovation, AI storytelling, or digital care strategy.</p>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <label>Full Name</label>
+            <input type="text" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-row">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-row">
+            <label>Message</label>
+            <textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button class="btn btn-primary btn-full" type="submit">Send Message</button>
+          <p class="form-feedback" id="formFeedback"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="editable" data-key="footerText">Rachael · Nurse · AI Creator · Healthcare Tech Innovator · Digital Storyteller</p>
+    <p>© 2026 Rachael Portfolio</p>
+  </footer>
+
+  <button class="edit-trigger" id="editTrigger" title="Click to enter edit mode"></button>
+
+  <!-- Edit Mode UI -->
+  <div class="edit-panel hidden" id="editPanel">
+    <div class="edit-panel-header">
+      <h2>Edit Mode</h2>
+      <button class="close-edit" id="closeEdit">✕</button>
+    </div>
+    <div class="edit-panel-body">
+      <div class="edit-section">
+        <h3>Password</h3>
+        <p>Click the lock icon below to change your password (default: admin123)</p>
+        <button class="btn btn-secondary" id="changePasswordBtn">Change Password</button>
+      </div>
+      <div class="edit-section">
+        <h3>Quick Actions</h3>
+        <button class="btn btn-primary btn-full" id="saveEditBtn">Save & Publish Changes</button>
+        <button class="btn btn-outline btn-full" id="resetEditBtn">Reset to Defaults</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Password Modal -->
+  <div class="modal hidden" id="passwordModal">
+    <div class="modal-content">
+      <h3>Change Password</h3>
+      <div class="form-row">
+        <label>Current Password</label>
+        <input type="password" id="currentPassword" placeholder="Enter current password" />
+      </div>
+      <div class="form-row">
+        <label>New Password</label>
+        <input type="password" id="newPassword" placeholder="Enter new password" />
+      </div>
+      <div class="form-row">
+        <label>Confirm Password</label>
+        <input type="password" id="confirmPassword" placeholder="Confirm new password" />
+      </div>
+      <div class="modal-actions">
+        <button class="btn btn-primary" id="confirmPasswordBtn">Update Password</button>
+        <button class="btn btn-outline" id="cancelPasswordBtn">Cancel</button>
+      </div>
+      <p class="modal-feedback" id="passwordFeedback"></p>
+    </div>
+  </div>
+
+  <!-- Add Project Modal -->
+  <div class="modal hidden" id="addProjectModal">
+    <div class="modal-content">
+      <h3>Add New Project</h3>
+      <div class="form-row">
+        <label>Title</label>
+        <input type="text" id="newProjectTitle" placeholder="Project title" />
+      </div>
+      <div class="form-row">
+        <label>Category</label>
+        <input type="text" id="newProjectLabel" placeholder="e.g. Healthcare Technology" />
+      </div>
+      <div class="form-row">
+        <label>Description</label>
+        <textarea id="newProjectDesc" rows="4" placeholder="Project description..."></textarea>
+      </div>
+      <div class="modal-actions">
+        <button class="btn btn-primary" id="confirmAddProjectBtn">Add Project</button>
+        <button class="btn btn-outline" id="cancelAddProjectBtn">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Login Modal -->
+  <div class="modal" id="loginModal">
+    <div class="modal-content">
+      <h3>Enter Edit Mode</h3>
+      <p>Password required to edit this portfolio.</p>
+      <div class="form-row">
+        <input type="password" id="loginPassword" placeholder="Enter password" />
+      </div>
+      <div class="modal-actions">
+        <button class="btn btn-primary btn-full" id="loginBtn">Login</button>
+      </div>
+      <p class="modal-feedback" id="loginFeedback"></p>
+    </div>
+  </div>
+
+  <script src="portfolio-edit.js"></script>
+</body>
+</html>
