@@ -249,13 +249,13 @@ if (contactForm) {
 const downloadCvBtn = document.getElementById('downloadCv');
 if (downloadCvBtn) {
     downloadCvBtn.addEventListener('click', function() {
-        // You would replace this with actual CV file path
+        // Trigger CV file download
         const cvLink = document.createElement('a');
-        cvLink.href = '#'; // Replace with actual CV file
-        cvLink.download = 'Rachael_Eseohe_CV.pdf';
-        
-        // Show notification
-        alert('CV download would be initiated here. Please add your CV file path.');
+        cvLink.href = 'Rachael_Eseohe_CV.docx';
+        cvLink.download = 'Rachael_Eseohe_CV.docx';
+        document.body.appendChild(cvLink);
+        cvLink.click();
+        document.body.removeChild(cvLink);
     });
 }
 

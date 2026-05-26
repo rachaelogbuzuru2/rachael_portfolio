@@ -13,11 +13,15 @@ config.js
 !rachael.html
 !rachael.css
 !rachael.js
+!Rachael_Eseohe_CV.docx
 !.gitignore
 !netlify.toml
 *.html
 *.js
 *.css
+!rachael.html
+!rachael.css
+!rachael.js
 *.ini
 *.cfg
 *.txt
